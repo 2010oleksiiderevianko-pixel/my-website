@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CheckDrive | Преміальний автоцентр</title>
+    <meta
+      name="description"
+      content="CheckDrive - преміальний автоцентр з підбором, сервісом, тест-драйвами та доставкою автомобілів під ключ."
+    />
+    <meta name="google-site-verification" content="PycHN6VtoFL3wV6gZlV_u0TBAND-pde4Wvkr9gItxgY" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="CheckDrive">
+        <span class="brand-mark">C</span>
+        <span>CheckDrive</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" data-nav>
+        <a href="#about">Про нас</a>
+        <a href="#services">Послуги</a>
+        <a href="#catalog">Авто</a>
+        <a href="#video">Відео</a>
+        <a href="#news">Новини</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+
+      <a class="header-phone" href="tel:+380663784020">+380 66 378 40 20</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="CheckDrive">
+        <div class="hero-film" aria-label="Відеоісторія CheckDrive">
+          <video
+            class="hero-video is-active"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="assets/images/hero-poster.jpg"
+            data-hero-video
+          >
+            <source src="assets/videos/hero-driving-night.mp4" type="video/mp4" />
+          </video>
+          <video class="hero-video" autoplay muted loop playsinline data-hero-video>
+            <source src="assets/videos/hero-mechanic-consultation.mp4" type="video/mp4" />
+          </video>
+          <video class="hero-video" autoplay muted loop playsinline data-hero-video>
+            <source src="assets/videos/hero-global-call.mp4" type="video/mp4" />
+          </video>
+          <video class="hero-video" autoplay muted loop playsinline data-hero-video>
+            <source src="assets/videos/hero-engine-check.mp4" type="video/mp4" />
+          </video>
+          <video class="hero-video" autoplay muted loop playsinline data-hero-video>
+            <source src="assets/videos/hero-detailing.mp4" type="video/mp4" />
+          </video>
+          <video class="hero-video" autoplay muted loop playsinline data-hero-video>
+            <source src="assets/videos/hero-underbody-check.mp4" type="video/mp4" />
+          </video>
+          <video class="hero-video" autoplay muted loop playsinline data-hero-video>
+            <source src="assets/videos/hero-final-inspection.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero-bg" role="img" aria-label="Автомобіль у русі на дорозі"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Огляд · Підбір · Супровід</p>
+          <h1>CheckDrive</h1>
+          <p class="hero-copy">
+            Наша компанія проводить огляд автомобілів перед купівлею, діагностику, тест-драйв і повний супровід
+            угоди, щоб ви купили машину без сюрпризів.
+          </p>
+          <div class="hero-services" aria-label="Основні послуги">
+            <span>Виїзний огляд</span>
+            <span>Перевірка VIN</span>
+            <span>Комп'ютерна діагностика</span>
+            <span>Тест-драйв</span>
+          </div>
+          <div class="hero-story" aria-live="polite">
+            <span data-scene-step>01 / 03</span>
+            <strong data-scene-title>Авто проходить перший шлях до перевірки</strong>
+            <p data-scene-text>Ми починаємо з реального сценарію: машина в русі, поведінка на дорозі, звук і перші сигнали стану.</p>
+          </div>
+          <div class="hero-dots" aria-label="Сцени відео">
+            <button class="is-active" type="button" aria-label="Сцена 1" data-scene-dot="0"></button>
+            <button type="button" aria-label="Сцена 2" data-scene-dot="1"></button>
+            <button type="button" aria-label="Сцена 3" data-scene-dot="2"></button>
+            <button type="button" aria-label="Сцена 4" data-scene-dot="3"></button>
+            <button type="button" aria-label="Сцена 5" data-scene-dot="4"></button>
+            <button type="button" aria-label="Сцена 6" data-scene-dot="5"></button>
+            <button type="button" aria-label="Сцена 7" data-scene-dot="6"></button>
+          </div>
+          <div class="hero-actions">
+            <a class="button primary" href="#catalog">Дивитися авто</a>
+            <button class="button ghost" type="button" data-open-modal>Записатися на тест-драйв</button>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Швидка статистика">
+          <span>Новий сезон</span>
+          <strong>500+ авто</strong>
+          <small>у наявності та під замовлення</small>
+        </aside>
+      </section>
+
+      <section class="section intro" id="about">
+        <div class="section-kicker">Автоцентр</div>
+        <div class="intro-grid">
+          <div>
+            <h2>Підбір, купівля і сервіс автомобілів під один ключ.</h2>
+          </div>
+          <div class="intro-copy">
+            <p>
+              Ми допомагаємо знайти автомобіль, який пасує до вашого маршруту: від міського електрокара до
+              спортивного купе для вихідних. Перевіряємо історію, технічний стан, документи й супроводжуємо угоду.
+            </p>
+            <div class="intro-links">
+              <a href="#services">Для покупців</a>
+              <a href="#catalog">Каталог</a>
+              <a href="#contacts">Консультація</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="coverage">
+        <div class="coverage-copy">
+          <p class="eyebrow">Покриття</p>
+          <h2>Доставляємо авто з Європи, США та України.</h2>
+          <p>
+            Команда працює з перевіреними дилерами, аукціонами й сервісними партнерами. Ви бачите статус кожного
+            етапу: пошук, огляд, торг, логістика, сертифікація, видача.
+          </p>
+          <a class="text-link" href="#contacts">Побудувати маршрут покупки</a>
+        </div>
+        <div class="coverage-map" aria-label="Карта напрямків доставки">
+          <span class="pin p1">Київ</span>
+          <span class="pin p2">Прага</span>
+          <span class="pin p3">Гамбург</span>
+          <span class="pin p4">Нью-Йорк</span>
+          <span class="route r1"></span>
+          <span class="route r2"></span>
+          <span class="route r3"></span>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="Показники CheckDrive">
+        <div>
+          <strong data-count="12">0</strong>
+          <span>років у продажах</span>
+        </div>
+        <div>
+          <strong data-count="840">0</strong>
+          <span>виданих автомобілів</span>
+        </div>
+        <div>
+          <strong data-count="96">0</strong>
+          <span>перевірок перед купівлею</span>
+        </div>
+        <div>
+          <strong data-count="24">0</strong>
+          <span>години на перший шортлист</span>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Рішення</p>
+            <h2>Все, що потрібно автомобілю і власнику.</h2>
+          </div>
+          <button class="button compact" type="button" data-open-modal>Обговорити задачу</button>
+        </div>
+        <div class="service-grid">
+          <article>
+            <span>01</span>
+            <h3>Підбір авто</h3>
+            <p>Формуємо короткий список машин за бюджетом, сценаріями поїздок, ліквідністю й сервісною історією.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Перевірка</h3>
+            <p>Діагностика кузова, електроніки, ходової, історії ДТП, пробігу, застав і документів.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Доставка</h3>
+            <p>Логістика, митне оформлення, сертифікація й підготовка до реєстрації без розривів у процесі.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Сервіс</h3>
+            <p>Планове ТО, детейлінг, шини, захист кузова, сезонні перевірки та персональний сервісний календар.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="showcase" id="catalog">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Авто в фокусі</p>
+            <h2>Гараж, який хочеться переглядати довше.</h2>
+            <p class="catalog-note">
+              У каталозі <strong data-inventory-count>500</strong> автомобілів: електрокари, спорткари й SUV під різні
+              бюджети та сценарії.
+            </p>
+          </div>
+          <div class="filters" aria-label="Фільтр автомобілів">
+            <button class="active" type="button" data-filter="all">Усі</button>
+            <button type="button" data-filter="electric">Electric</button>
+            <button type="button" data-filter="sport">Sport</button>
+            <button type="button" data-filter="suv">SUV</button>
+          </div>
+        </div>
+
+        <div class="car-grid" data-car-grid>
+          <article class="car-card" data-category="sport">
+            <img
+              src="assets/images/porsche-911-feature.jpg"
+              alt="Темний спортивний автомобіль на дорозі"
+            />
+            <div>
+              <span>Sport</span>
+              <h3>Porsche 911 Carrera</h3>
+              <p>385 к.с. · 4.2 с до 100 · повна перевірка</p>
+            </div>
+          </article>
+          <article class="car-card" data-category="electric">
+            <img
+              src="assets/images/tesla-model3-feature.jpg"
+              alt="Електромобіль Tesla біля зарядної станції"
+            />
+            <div>
+              <span>Electric</span>
+              <h3>Tesla Model 3 Long Range</h3>
+              <p>629 км WLTP · AWD · тепловий насос</p>
+            </div>
+          </article>
+          <article class="car-card" data-category="suv">
+            <img
+              src="assets/images/range-rover-feature.jpg"
+              alt="Позашляховик на відкритій дорозі"
+            />
+            <div>
+              <span>SUV</span>
+              <h3>Range Rover Sport</h3>
+              <p>Пневмопідвіска · 4x4 · преміальний салон</p>
+            </div>
+          </article>
+          <article class="car-card" data-category="sport">
+            <img
+              src="assets/images/mustang-fastback-feature.jpg"
+              alt="Класичний чорний спортивний автомобіль"
+            />
+            <div>
+              <span>Collector</span>
+              <h3>Ford Mustang Fastback</h3>
+              <p>V8 · реставрація · колекційний стан</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process">
+        <div class="process-media">
+          <img
+            src="assets/images/showroom-supercar.jpg"
+            alt="Суперкар у шоурумі"
+          />
+        </div>
+        <div class="process-copy">
+          <p class="eyebrow">Як працюємо</p>
+          <h2>Ви обираєте напрям, ми ведемо процес до ключів.</h2>
+          <ol>
+            <li><strong>Бриф.</strong> Фіксуємо бюджет, клас авто, стиль їзди й обмеження.</li>
+            <li><strong>Шортлист.</strong> Даємо кілька сильних варіантів з чесними плюсами й ризиками.</li>
+            <li><strong>Угода.</strong> Перевіряємо, торгуємося, оформлюємо й доставляємо.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="video-section" id="video">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Відео</p>
+            <h2>Люди, процеси й реальні історії про автомобілі.</h2>
+          </div>
+          <p class="video-lead">
+            Додали добірку роликів, де майстри й автоексперти показують роботу руками, пояснюють перевірки та
+            говорять про машини без зайвого пафосу.
+          </p>
+        </div>
+
+        <div class="video-grid">
+          <article class="video-feature">
+            <div class="video-frame">
+              <video controls preload="metadata" poster="assets/images/video-poster-inspection.jpg">
+                <source src="assets/videos/hero-underbody-check.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-copy">
+              <span>Перевірка перед купівлею</span>
+              <h3>Механік пояснює, на що дивитися перед угодою.</h3>
+              <p>
+                Добре пасує до послуги підбору: кузов, пробіг, підкапотний простір, тестова поїздка й логіка
+                передпродажної діагностики.
+              </p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame small">
+              <video controls preload="metadata" poster="assets/images/video-poster-detailing.jpg">
+                <source src="assets/videos/hero-detailing.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div>
+              <span>Detailing</span>
+              <h3>Чим детейлінг відрізняється від звичайної мийки</h3>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame small">
+              <video controls preload="metadata" poster="assets/images/video-poster-mechanic.jpg">
+                <source src="assets/videos/hero-final-inspection.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div>
+              <span>Workshop</span>
+              <h3>Робота в детейлінг-майстерні з реальним автомобілем</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section news" id="news">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Журнал</p>
+            <h2>Корисне для людей, які люблять машини.</h2>
+          </div>
+        </div>
+        <div class="news-grid">
+          <article>
+            <img
+              src="assets/images/news-sport.jpg"
+              alt="Жовтий спортивний автомобіль"
+            />
+            <div>
+              <p>Гайд</p>
+              <h3>Як вибрати спортивне авто, яке не з'їсть бюджет на сервісі</h3>
+              <button type="button" data-info="sport">Дізнатися більше</button>
+            </div>
+          </article>
+          <article>
+            <img
+              src="assets/images/news-service.jpg"
+              alt="Салон автомобіля"
+            />
+            <div>
+              <p>Сервіс</p>
+              <h3>Передпродажна діагностика: 18 пунктів, які не можна пропустити</h3>
+              <button type="button" data-info="inspection">Дізнатися більше</button>
+            </div>
+          </article>
+          <article>
+            <img
+              src="assets/images/news-electric.jpg"
+              alt="Електромобіль на дорозі"
+            />
+            <div>
+              <p>Electric</p>
+              <h3>Електрокар у 2026: коли він справді вигідніший за бензин</h3>
+              <button type="button" data-info="electric">Дізнатися більше</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark">C</span>
+          <span>CheckDrive</span>
+        </a>
+        <p>Автоцентр з підбором, доставкою, сервісом і тест-драйвами у Києві.</p>
+      </div>
+      <div>
+        <h2>Контакти</h2>
+        <a href="tel:+380663784020">+380 66 378 40 20</a>
+        <a href="mailto:hello@checkdrive.ua">hello@checkdrive.ua</a>
+        <span>Київ, вул. Велика Кільцева, 12</span>
+      </div>
+      <form class="contact-form">
+        <label>
+          Ім'я
+          <input type="text" name="name" placeholder="Олександр" />
+        </label>
+        <label>
+          Що шукаєте?
+          <input type="text" name="car" placeholder="Наприклад, електрокар до $35k" />
+        </label>
+        <button class="button primary" type="submit">Надіслати заявку</button>
+      </form>
+    </footer>
+
+    <dialog class="drive-modal" data-modal>
+      <button class="modal-close" type="button" aria-label="Закрити" data-close-modal>×</button>
+      <p class="eyebrow">Тест-драйв</p>
+      <h2>Підберемо авто для першої поїздки.</h2>
+      <form>
+        <label>
+          Ваше ім'я
+          <input type="text" placeholder="Ім'я" />
+        </label>
+        <label>
+          Телефон
+          <input type="tel" placeholder="+380" />
+        </label>
+        <label>
+          Клас авто
+          <select>
+            <option>Sport</option>
+            <option>Electric</option>
+            <option>SUV</option>
+            <option>Не визначився</option>
+          </select>
+        </label>
+        <button class="button primary" type="submit">Забронювати</button>
+      </form>
+    </dialog>
+
+    <dialog class="info-modal" data-info-modal>
+      <button class="modal-close" type="button" aria-label="Закрити" data-close-info>×</button>
+      <p class="eyebrow" data-info-label>Гайд</p>
+      <h2 data-info-title>Деталі</h2>
+      <p class="info-intro" data-info-intro></p>
+      <ul data-info-list></ul>
+      <div class="info-note">
+        <strong data-info-note-title></strong>
+        <span data-info-note></span>
+      </div>
+      <button class="button primary" type="button" data-close-info-bottom>Зрозуміло</button>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
